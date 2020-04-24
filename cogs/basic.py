@@ -44,17 +44,6 @@ class basicCog(commands.Cog):
         else:
             await ctx.send(str(cog) + " successfully reloaded!")
 
-
-
-
-
-
-
-    @commands.command(name='coolbot')
-    async def cool_bot(self, ctx):
-        """Is the bot cool?"""
-        await ctx.send('This bot is cool. :)')
-
 def setup(bot):
     bot.add_cog(basicCog(bot))
 
